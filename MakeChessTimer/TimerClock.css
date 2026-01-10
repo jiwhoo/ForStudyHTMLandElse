@@ -1,0 +1,22 @@
+body{
+    background-image: url('./Resource/WoodenBackground.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hand{
+    width: 50%;
+    height: 6%;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    transition: 0.05s;
+    transform: rotate(90deg);
+    transform-origin: 100%;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+.clock{
+    width: 30rem;
+    height: 30rem;
+
+}
