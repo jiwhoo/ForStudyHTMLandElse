@@ -1,0 +1,50 @@
+button{
+    height: 10vmin;
+    width: 10vmin;
+    gap: 5px;
+    border: none;
+    border-radius: 5.5%;
+    padding: 5px;
+    margin: 4px auto;
+}
+.wrap{
+    border-radius: 5%;
+    height: 60vmin;
+    width: 45vmin;
+}
+
+.buttons{
+    gap: 1vmin;
+    padding: 1vmin;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.operator, .result, .ac{
+    background-color:coral ;
+    font-size: 5vmin;
+    font-weight: 1000;
+    padding: 0.5vmin;
+}
+
+.num{
+    font-size: 6vmin;
+}
+.display{
+    display: flex;
+    height: 10vmin;
+    width: 40vmin;
+    background-color: gray;
+    gap: 10vmin;
+    padding: 1vmin;
+    border-radius: 1vmin;
+}
+.input{
+    text-align:end;
+    height: 10vmin;
+    width: 40vmin;
+    font-size: 4vmin;
+    font-weight: 700;
+    padding: 1vmin;
+    background-color: #fff;
+    border-radius: 0.88vmin;
+}
