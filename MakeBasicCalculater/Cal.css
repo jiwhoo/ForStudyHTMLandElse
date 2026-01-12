@@ -1,22 +1,24 @@
 button{
     height: 10vmin;
     width: 10vmin;
-    gap: 5px;
     border: none;
     border-radius: 5.5%;
-    padding: 5px;
-    margin: 4px auto;
 }
 .wrap{
-    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 2vmin;
     height: 60vmin;
     width: 45vmin;
+    background-color: #777;
 }
 
 .buttons{
-    gap: 1vmin;
-    padding: 1vmin;
-    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    gap: 0.5vmin;
+    grid-template-columns: repeat(4, 10vmin);
 }
 
 .operator, .result, .ac{
@@ -30,21 +32,25 @@ button{
     font-size: 6vmin;
 }
 .display{
-    display: flex;
-    height: 10vmin;
-    width: 40vmin;
-    background-color: gray;
+    display: grid;
+    height: 12vmin;
+    width: 42vmin;
+    background-color: #fff;
     gap: 10vmin;
-    padding: 1vmin;
-    border-radius: 1vmin;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.4vmin;
+    margin-bottom: 2vmin;
 }
 .input{
     text-align:end;
+    padding-right: 1.5vmin;
+    line-height: 9vmin;
     height: 10vmin;
-    width: 40vmin;
-    font-size: 4vmin;
+    width: 38.5vmin;
+    font-size: 4.5vmin;
     font-weight: 700;
-    padding: 1vmin;
+    
     background-color: #fff;
     border-radius: 0.88vmin;
 }
