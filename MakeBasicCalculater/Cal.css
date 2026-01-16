@@ -1,10 +1,19 @@
+
+
 button{
     height: 10vmin;
     width: 10vmin;
     border: none;
     border-radius: 5.5%;
 }
+
+button:active{
+    filter: brightness(0.85);
+}
+
 .wrap{
+
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,4 +62,8 @@ button{
     
     background-color: #fff;
     border-radius: 0.88vmin;
+}
+
+.nightModeFame{
+    
 }
