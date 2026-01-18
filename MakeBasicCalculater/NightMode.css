@@ -1,0 +1,55 @@
+label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.nightModeFrame{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.nightMode{
+    appearance: none;
+    width: 2.25rem;
+    height: 1.25rem;
+    border-radius: 1.25rem;
+    position: relative;
+    border: max(2px, 0.1rem) solid gray;
+}
+
+.nightMode::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1.5rem;
+    transform: scale(0.8);
+    background-color: gray;
+    transition: left 250ms linear;
+}
+
+.nightMode:checked::before{
+    content: "";
+    position: absolute;
+    left:1rem;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 1.5rem;
+    transform: scale(0.8);
+    background-color: white;
+}
+
+.nightMode:checked{
+    background-color: tomato;
+    border-color: tomato;
+}
+
+body.dark{
+    filter: invert(1) hue-rotate(180deg);
+    transition: filter 0.3s ease;
+    background-color: rgb(39, 39, 39);
+}

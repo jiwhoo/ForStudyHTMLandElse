@@ -6,16 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>사칙연산용 계산기</title>
     <link rel="stylesheet" href="Cal.css">
+    <link rel="stylesheet" href="NightMode.css">
 </head>
+
 <body>
-    <h1>계산기이다 이것 아마 작동 할수도 있고 안할 수도 있는</h1>
-    <div class="nightModeFrame">
-        <button class="nightMode"></button>
-    </div>
-    
+    <h1 style="font-size: 4.5vmin;">계산기</h1>
+
+<div class="nightModeFrame">
+    <label>
+        <input class="nightMode" role="switch" type="checkbox"   />
+        <span>나이트 모드</span>
+    </label>
+</div>
+
+
+
     <div class="wrap">
         <div class="display">
-            <div class="input">확인용</div>
+            <div class="input">0</div>
         </div>
         <div class="buttons">
             <button class="ac">C</button>
@@ -41,5 +49,6 @@
     </div>
 
     <script src="Cal.js"></script>
+    <script src="NightMode.js"></script>
 </body>
 </html>
